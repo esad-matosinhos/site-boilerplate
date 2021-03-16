@@ -1,0 +1,26 @@
+form {
+    width: 400px;
+    margin: auto;
+    font-family: 'SF Pro', sans-serif;
+}
+
+label {
+    font-size: 12px;
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=number] 
+{
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid lightgray;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 12px;
+    font-size: 32px;
+    padding: 12px;
+}

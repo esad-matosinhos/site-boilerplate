@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Database Site</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Book Database Site">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/form.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body id="body">
+
+  <form onsubmit="updateForm(); return false;">
+    <label for="username">Username</label>
+    <input type="text" id="username">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" >
+
+    <label for="apples">Apples</label>
+    <input type="number" id="apples" min="0" max="25" step="5" value="0">
+    
+    <label for="tel">Tel.</label>
+    <input type="tel" id="tel">
+
+    <label for="website">Website</label>
+    <input type="url" id="website">
+
+    <label for="birthdate">Website</label>
+    <input type="date" id="birthdate">
+    
+    <!-- CheckBox -->
+    <input type="checkbox" id="bike" value="bike">
+    <label for="bike">Bike</label>
+    
+    <input type="checkbox" id="car" value="car">
+    <label for="car">Car</label>
+    
+    <input type="checkbox" id="bus" value="bus">
+    <label for="bus">Bus</label>
+    <!-- CheckBox End -->
+    
+    <!-- Radio -->
+    <input type="radio" id="bike" name="transportation" value="bike">
+    <label for="bike">Bike</label>
+    
+    <input type="radio" id="car" name="transportation" value="car">
+    <label for="car">Car</label>
+    
+    <input type="radio" id="bus" name="transportation" value="bus">
+    <label for="car">Bus</label>
+    <!-- Radio End -->
+    
+    <!-- Select -->
+    <label for="cars">Select Brand:</label>
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    <!-- Select End -->
+
+    <label for="biography">Biography</label>
+    <textarea name="biography" id="biopgraphy" cols="30" rows="10"></textarea>
+
+    <label for="file">PDF Document</label>
+    <input type="file" id="file" name="file">
+
+    <!-- Range -->
+    <label for="year">Year</label>
+    <input type="range" id="year" min="1960" max="2020" step="1" value="1960">
+    <p id="current-year"></p>
+    <!-- Range End -->
+
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/form.js"></script>
+</body>
+
+</html>
